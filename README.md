@@ -2,10 +2,11 @@
 A ray tracing algorithm that can calculate the collision cross section in a similar way to the exact hard sphere scattering method.
 
 # Running RayTracer
-RayTracer can be run using the following command
-'''
+RayTracer can be run using the following command:
+
+```
 ./RayTracer -- (input coordinate file, either .pdb or .xyz) --orientations (default: 300) --impacts (default: 400) --projectile-radius (default 1.0 Å) --sampling (default quasi)
-'''
+```
 #### Inputs
 RayTracer at the moment only accepts .pdb and .xyz files for proteins and small molecules respectively. Currently RayTracer is only parameterised for the standard non-metal atoms (H, C, N, O, F, S, Cl, P) and some metals (Na, K, and Fe)
 
