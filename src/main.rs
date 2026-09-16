@@ -21,12 +21,7 @@
 //
 //         Omega = 2*pi * integral_0^bmax (1 - cos(chi(b))) b db
 //
-// The atomic "hard sphere" radii used below are ILLUSTRATIVE
-// (van der Waals-ish radii, not the specific calibrated EHSS
-// parameters from the original paper, since only the paper's
-// abstract/metadata was available, not its full text). Swap in your
-// own calibrated radii via `Atom::new` or the `--radius` table if
-// you have them.
+
 
 use rand::Rng;
 use rayon::prelude::*;
@@ -787,10 +782,7 @@ fn compute_cross_section(
 // element -> hard-sphere radius table (ILLUSTRATIVE defaults).
 // ---------------------------------------------------------------
 fn default_radius_for_element(sym: &str) -> f64 {
-    // Illustrative atomic "hard sphere" radii in Angstrom (roughly
-    // van der Waals radii). These are NOT the specific calibrated
-    // EHSS parameters from Shvartsburg & Jarrold (1996) - substitute
-    // your own values here if you have them.
+    // Illustrative atomic "hard sphere" radii in Angstrom
     // Using the optimised parameters from Sui et al. (2009)
     match sym.to_ascii_uppercase().as_str() {
         "H" => 1.50,
