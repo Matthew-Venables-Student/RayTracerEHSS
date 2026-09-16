@@ -1,7 +1,7 @@
 # RayTracerEHSS
 A ray tracing algorithm that can calculate the collision cross section in a similar way to the exact hard sphere scattering method.
 
-# Running RayTracer
+## Running RayTracer
 RayTracer can be run using the following command:
 
 ```
@@ -26,5 +26,22 @@ There are two types of sampling used in RayTracer: "random", and "quasi".
 "random"- uses a Monte Carlo method to generate the trajectories, will be pseudorandom and change across runs. This method of sampling, however, will give errors if needed.
 "quasi"- uses a quasi-Monte Carlo method with the Halton sequence for both orientation and trajectories to have a more deterministic, less random, result. This method of sampling cannot give errors, but will give the spread between orientations.
 
-# Installation
-I have provided the precompiled binary of RayTracer. However for users that want to compile it,
+## Installation
+I have provided the precompiled binary of RayTracer. However for users that want to compile it, you must have rust/cargo installed (I recommend running RayTracer in WSL/Ubuntu). 
+#### Binary not working?
+If when you run the command you get a "permission denied" error, run the following command:
+```
+chmod +x RayTracer
+```
+This command will give reading commands to RayTracer to allow it to work.
+#### Rust installation
+```
+curl --proto '=https' --tlslv1.2 -sSf https://sh.rustup.rs | sh
+```
+#### RayTracer installation
+Once you have installed rust, run the following code to fully install RayTracer
+```
+git clone
+cd RayTracer
+cargo run --release
+```
