@@ -3,7 +3,7 @@ A ray tracing algorithm that can calculate the collision cross section in a simi
 
 # Running RayTracer
 RayTracer can be run using the following command
-'''bash
+'''
 ./RayTracer -- (input coordinate file, either .pdb or .xyz) --orientations (default: 300) --impacts (default: 400) --projectile-radius (default 1.0 Å) --sampling (default quasi)
 '''
 #### Inputs
