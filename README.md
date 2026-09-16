@@ -39,9 +39,9 @@ This command will give reading commands to RayTracer to allow it to work.
 curl --proto '=https' --tlslv1.2 -sSf https://sh.rustup.rs | sh
 ```
 #### RayTracer installation
-Once you have installed rust, run the following code to fully install RayTracer
+Once you have installed rust, run the following code to install and compile RayTracer (optional if you want to complie)
 ```
-git clone
+git clone https://github.com/Matthew-Venables-Student/RayTracerEHSS.git
 cd RayTracer
 cargo run --release
 ```
